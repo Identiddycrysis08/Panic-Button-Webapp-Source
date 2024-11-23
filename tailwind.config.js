@@ -9,6 +9,7 @@ module.exports = {
     colors: {
       "page-black":"#212529",
       "nav-black":"#1d2125",
+      "255-red":"#FF0000",
     },
 
   },

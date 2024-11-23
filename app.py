@@ -11,6 +11,10 @@ def home():
 def about():
     return render_template('about.html')
 
+@app.route('/404')
+def Error404():
+    return render_template('404.html')
+
 @app.route('/process', methods=['POST'])
 def process_string():
     try:
