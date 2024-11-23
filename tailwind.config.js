@@ -10,6 +10,13 @@ module.exports = {
       "page-black":"#212529",
       "nav-black":"#1d2125",
       "255-red":"#FF0000",
+      "Charcoal":"#2F4858",
+      "Lapis":"#33658A",
+      "Carolina":"#86BBD8",
+      "Mimi":"#F5D7E3",
+      "Cherry":"#F4A5AE",
+      "Amara":"#DD99BB",
+     
     },
 
   },
