@@ -6,7 +6,10 @@ module.exports = {
       "./node_modules/flowbite/**/*.js"
   ],
   theme: {
-    extend: {},
+    colors: {
+      "page-black":"#212529",
+      "nav-black":"#1d2125",
+    },
 
   },
   plugins: [

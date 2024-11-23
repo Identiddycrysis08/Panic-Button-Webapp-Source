@@ -1,0 +1,132 @@
+
+form {
+  background-color: #212529;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-top: 5%; /* Space below the header */
+  text-align: center;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-color: #383c40;
+}
+
+/* Input styling */
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Traditional button styling */
+button {
+  background-color: #25282b; /* Classic blue button */
+  color: white;
+  padding: 12px 24px;
+  border: 1px solid #25282b;
+  border-radius: 10px; /* Slight rounding of corners */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  position: relative;
+  overflow: hidden; /* So that the loader doesn't overflow the button */
+  min-width: 200px; /* Ensure button has a minimum width */
+  width: auto;
+  height: auto; /* Adjust height based on the content */
+}
+
+/* Basic Loader animation */
+button .loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border: 4px solid #fff; /* White loader */
+  border-top: 4px solid #007bff; /* Blue top part of the loader */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  transform: translate(-50%, -50%); /* This ensures the loader is centered */
+  display: none; /* Hidden by default */
+  transform-origin: center; /* Set the rotation center to the center of the loader */
+}
+
+/* Keyframes for spinning the loader */
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg); /* Start rotation at 0 degrees */
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg); /* Rotate to 360 degrees */
+  }
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #25282b; /* Darker blue when hovered */
+  border-color: #25282b; /* Darker border color */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly larger shadow */
+}
+
+/* Button press animation */
+button:active {
+  transform: scale(0.98); /* Shrink the button slightly when pressed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow on press */
+}
+
+/* Success/Error message styling */
+p#responseText {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #d32f2f; /* Default to error (red); update dynamically with JavaScript */
+}
+
+/* Success color */
+p.success {
+  color: #388e3c;
+}
+
+/* Mobile optimization */
+@media (max-width: 480px) {
+  header {
+    font-size: 18px; /* Smaller header text on mobile */
+    padding: 15px;
+  }
+
+  form {
+    width: 90%; /* Make the form take up 90% of the screen width */
+    margin-top: 120px; /* Space below the header */
+  }
+
+  input[type="email"] {
+    padding: 14px; /* Slightly larger padding for easier touch */
+  }
+
+  button {
+    width: 100%; /* Make the button full-width on small screens */
+    padding: 18px;
+    font-size: 20px; /* Larger text on mobile */
+  }
+}
+
+/* Button with loading class (loader) */
+button.loading {
+  background-color: #ccc;  /* Change color while loading */
+  cursor: not-allowed;  /* Disable button */
+}
+
+/* Button with loader */
+button.loading .loader {
+  display: block;  /* Show the loader */
+}
+/* Styling for the custom paragraph box */
+
+
