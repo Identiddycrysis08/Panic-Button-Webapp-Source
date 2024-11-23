@@ -21,5 +21,5 @@ COPY . .
 EXPOSE 8080
 
 # Specify the command to run on container start
-CMD ["python", "-m", "waitress","--host","192.168.1.114","app:app"]
+CMD ["python", "-m", "waitress","--host","127.0.0.1","app:app"]
 
