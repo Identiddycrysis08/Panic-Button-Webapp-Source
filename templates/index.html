@@ -26,22 +26,46 @@
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
         <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-nav-black md:dark:bg-nav-black dark:border-gray-700">
           <li>
-            <a href="/" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+            <a href="/" class=" border-0 block py-2 px-3 text-white bg-Charcoal rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
           </li>
           <li>
-            <a href="/about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+            <a href="/about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-Lapis dark:hover:text-white md:dark:hover:bg-transparent">About</a>
           </li>
         </ul>
       </div>
     </div>
     </nav>
 
-    <h1 class="text-white text-3xl text-center  underline underline-offset-8">Demonstration Page</h1>
 
-    <form id="emailForm" class="max-w-sm mx-auto">
-    <label for="emailInput" class="block rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-gray-50 dark:bg-page-black border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-nav-black dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer">Enter Email Address:</label>
-      <input class="bg-nav-black" type="email" id="emailInput" name="emailInput" required>
-        <button class=" h-10 px-6 relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800" type="button" id="submitButton" onclick="sendEmail()">
+
+    <div id="marketing-banner" tabindex="-1" class="fixed z-50 flex flex-col md:flex-row justify-between w-[calc(100%-2rem)] p-4 -translate-x-1/2 bg-white border border-gray-100 rounded-lg shadow-sm lg:max-w-7xl left-1/2 top-6 dark:bg-nav-black dark:border-nav-black">
+    <div class="flex flex-col items-start mb-3 me-4 md:items-center md:flex-row md:mb-0">
+        <a href="" class="flex items-center mb-2 border-gray-200 md:pe-4 md:me-4 md:border-e md:mb-0 dark:border-gray-600">
+            <img src="" class="h-6 me-2 text-white" alt="Logo">
+            <span class="self-center text-lg font-semibold whitespace-nowrap dark:text-white">Panic Button</span>
+        </a>
+        <p class="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">This website is currently underdevelopment please be kind 😭</p>
+    </div>
+    <div class="flex items-center flex-shrink-0">
+        <button data-dismiss-target="#marketing-banner" type="button" class=" border-0 flex-shrink-0 inline-flex justify-center w-7 h-7 items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+            </svg>
+            <span class="sr-only">Close banner</span>
+        </button>
+    </div>
+    </div>
+
+
+    <div class=" p-8 h-auto w-full bg-page-black">
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center underline-offset-8 underline">Demonstration Page</h1>
+    </div>
+
+
+    <form id="emailForm" class="max-w-sm mx-auto border-0">
+    <label for="emailInput" class="block rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-gray-50 dark:bg-page-black border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-nav-black dark:focus:border-blue-500  focus:outline-none focus:ring-0 focus:border-blue-600 peer">Enter Email Address:</label>
+      <input class="bg-nav-black text-white" type="email" id="emailInput" name="emailInput" required>
+        <button class=" h-10 px-6 relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-Mimi to-Cherry group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800" type="button" id="submitButton" onclick="sendEmail()">
           Send Email
         <div class="loader"></div> <!-- Loader spinner inside button -->
       </button>
@@ -56,7 +80,7 @@
           <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
                 <a href="" class="flex items-center">
-                    <img src="" class="h-8 me-3" alt="bella make a logo to put here" />
+                    <img src="" class="h-8 me-3 text-white" alt="bella make a logo to put here" />
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Panic Button</span>
                 </a>
             </div>
