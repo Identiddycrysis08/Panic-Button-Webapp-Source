@@ -7,9 +7,9 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route('/about')
-def about():
-    return render_template('about.html')
+@app.route('/aboutpage')
+def aboutpage():
+    return render_template('aboutpage.html')
 
 @app.route('/404')
 def Error404():

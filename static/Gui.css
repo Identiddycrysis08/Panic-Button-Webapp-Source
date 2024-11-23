@@ -49,8 +49,8 @@ button .loader {
   left: 50%;
   width: 20px;
   height: 20px;
-  border: 4px solid #fff; /* White loader */
-  border-top: 4px solid #007bff; /* Blue top part of the loader */
+  border: 4px solid #fefefe00; /* White loader */
+  border-top: 4px solid #810735; /* Blue top part of the loader */
   border-radius: 50%;
   animation: spin 1s linear infinite;
   transform: translate(-50%, -50%); /* This ensures the loader is centered */

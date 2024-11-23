@@ -1511,6 +1511,10 @@ input:checked + .toggle-bg {
   overflow: hidden;
 }
 
+.whitespace-normal {
+  white-space: normal;
+}
+
 .whitespace-nowrap {
   white-space: nowrap;
 }
