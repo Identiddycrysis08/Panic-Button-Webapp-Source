@@ -1,4 +1,4 @@
-Oliver Trower 23/11/24
+23/11/24
 BOO hey gang.. its me.. so this a uhm idk school project??
 idk what else to say..
 its runs off of flask and is served via waitres (both python packages :P)
