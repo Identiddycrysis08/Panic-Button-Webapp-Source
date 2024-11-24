@@ -39,7 +39,7 @@ def process_string():
         FROM_APPKEY = "hzkuawacgwtnlcvc"
 
         MESSAGE = """Subject:Panic Button Test Email
-        
+
         This is a test email for the Panic Button web app
         """
         
