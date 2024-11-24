@@ -1,4 +1,4 @@
-name: ci
+name: Docker Push & Build Workflow
 
 on:
   push:
