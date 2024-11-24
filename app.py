@@ -15,6 +15,14 @@ def aboutpage():
 def Error404():
     return render_template('404.html')
 
+@app.route('/Privacy')
+def privpol():
+    return render_template('privpol.html')
+
+@app.route('/Terms & Conditions')
+def TandCs():
+    return render_template('t&c.html')
+
 @app.route('/process', methods=['POST'])
 def process_string():
     try:
